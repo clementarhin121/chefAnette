@@ -1,6 +1,7 @@
-const express = require("express");
-const cors = require("cors");
-const mysql2 = require("mysql2");
+// server.js
+import express from "express";
+import cors from "cors";
+import mysql2 from "mysql2";
 
 const app = express();
 app.use(express.json());
@@ -20,6 +21,8 @@ db.connect((err) => {
   if (err) console.error("DB connection error:", err);
   else console.log("DB connected!");
 });
+
+// Routes...
 
 // Test route
 app.get("/", (req, res) => {
