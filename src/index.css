@@ -240,7 +240,7 @@ li {
 .listSlide li img {
   width: 90%; /* not full edge-to-edge */
   max-width: 400px; /* prevent giant scaling */
-  border-radius: 12px;
+  border-radius: 12 px;
   object-fit: cover;
   transition: 0.2s;
 }
