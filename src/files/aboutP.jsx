@@ -30,9 +30,6 @@ function AboutP() {
             <ul>
               <li key={product_info.product_id}>
                 <h1>{product_info.product_name}</h1>
-                <p>
-                  <strong>Location:</strong> {product_info.location}
-                </p>
                 <img
                   width="100%"
                   height="200px"

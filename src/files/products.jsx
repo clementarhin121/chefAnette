@@ -24,9 +24,7 @@ function Products() {
       onClick={() => About(d.product_id)}>
       <li>
         <h1>{d.product_name}</h1>
-        <p>
-          <strong>Location:</strong> {d.location}
-        </p>
+
         <img
           src={d.product_image}
           alt={d.product_name}
