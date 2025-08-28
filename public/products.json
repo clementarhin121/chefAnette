@@ -1,0 +1,29 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Gobe",
+    "product_location": "NY",
+    "product_description": "Beans, Plantain, Gari",
+    "product_price": 20,
+    "product_quantity": 1,
+    "product_image": "https://travelandmunchies.com/wp-content/uploads/2022/11/IMG_3580-1-scaled.jpg"
+  },
+  {
+    "product_id": 2,
+    "product_name": "Abomu",
+    "product_location": "Accra",
+    "product_description": "Plantains and stew",
+    "product_price": 25,
+    "product_quantity": 1,
+    "product_image": "https://www.bellanaija.com/wp-content/uploads/2024/06/maxresdefault-2024-06-01T123920.816-1000x600.jpg"
+  },
+  {
+    "product_id": 3,
+    "product_name": "Atieke",
+    "product_location": "FL",
+    "product_description": "Tasty from the motherland",
+    "product_price": 25,
+    "product_quantity": 1,
+    "product_image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Attieke.JPG"
+  }
+]
