@@ -8,15 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://clementarhin121.github.io/chefanette",
+  "homepage": "https://clementarhin121.github.io/chefAnette",
   "dependencies": {
-    "gh": "^2.8.9",
-    "pages": "^0.0.16",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.8.2"
