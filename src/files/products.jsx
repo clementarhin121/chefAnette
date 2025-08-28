@@ -3,8 +3,9 @@ import Menu from "../components/menu";
 import { useNavigate } from "react-router-dom";
 
 function Products() {
+  const [prods, setProds] = useState([]);
   useEffect(() => {
-    fetch("/products.json") // React will serve it from public folder
+    fetch("/products.json")
       .then((res) => res.json())
       .then((data) => setProds(data))
       .catch((err) => console.error("fetch error:", err));
