@@ -12,14 +12,14 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.1",
+    "mysql2": "^3.5.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.8.2",
-    "express": "^4.19.1",
-    "cors": "^2.8.5",
-    "mysql2": "^3.5.2",
-    "dotenv": "^16.3.1",
-    "bcrypt": "^5.2.1"
+    "react-router-dom": "^7.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
