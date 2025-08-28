@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [sinotabClass, setSinotabClass] = useState("sinotab");
@@ -67,10 +68,26 @@ function Menu() {
 
         {isBurgerOpen && (
           <div className="burgerDropdown">
-            <a href="/">Home</a>
-            <a href="/products">Products</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <Link
+              to="/"
+              onClick={() => setIsBurgerOpen(false)}>
+              Home
+            </Link>
+            <Link
+              to="/products"
+              onClick={() => setIsBurgerOpen(false)}>
+              Products
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setIsBurgerOpen(false)}>
+              About
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setIsBurgerOpen(false)}>
+              Contact
+            </Link>
           </div>
         )}
       </div>
