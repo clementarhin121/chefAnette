@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Products() {
   const [prods, setProds] = useState([]);
+
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
@@ -18,30 +19,39 @@ function Products() {
   };
 
   const list = prods.map((d) => (
-    <ul onClick={() => About(d.product_id)}>
-      <li key={d.product_id}>
+    <ul
+      key={d.product_id}
+      onClick={() => About(d.product_id)}>
+      <li>
         <h1>{d.product_name}</h1>
+        <p>
+          <strong>Location:</strong> {d.location}
+        </p>
         <img
           src={d.product_image}
-          alt=""
+          alt={d.product_name}
         />
         <p>{d.product_description}</p>
-        <p>${d.product_price}</p>
+        <p>
+          <strong>Price:</strong> ${d.product_price}
+        </p>
+        <p>
+          <strong>Quantity:</strong> {d.quantity}
+        </p>
       </li>
     </ul>
   ));
 
   return (
-    <>
-      <div className="productpage">
-        <div className="overlay">
-          <Menu />
-          <div className="listItems">
-            <div className="listSlide">{list}</div>
-          </div>
+    <div className="productpage">
+      <div className="overlay">
+        <Menu />
+        <div className="listItems">
+          <div className="listSlide">{list}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Products;
